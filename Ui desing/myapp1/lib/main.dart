@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:myapp1/Screens/Home.dart';
+import 'package:myapp1/Screens/Sample.dart';
 
 void main(){
   runApp(const MyApp());
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return  MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Home_Page(),
+      home: MyTextfields(),
     );
   }
 }

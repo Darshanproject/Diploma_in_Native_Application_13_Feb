@@ -30,12 +30,14 @@ class _Home_PageState extends State<Home_Page> {
                   child: Image.asset("assets/download.jpeg"),
                 ),
                 Container(
+                  color: Colors.amber,
                   child: Lottie.asset("assets/a.json"),
                 ),
                 Container(
                   height: 150,
                   color: Colors.deepOrange,
                   width: double.maxFinite,
+                  child: Lottie.network("https://lottie.host/fce97df2-29cb-4381-bf03-4ae47ca7da51/lbzKQfdpIT.json"),
                 )
               ],
             ),

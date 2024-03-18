@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-
-void main() {
+    
+void main(){
   runApp(const MyApp());
 }
+
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -12,42 +13,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        // backgroundColor: Colors.amber,
         appBar: AppBar(
-          title: Text(
-            "Container",
-            style: TextStyle(
-                fontSize: 24, color: Colors.white, fontWeight: FontWeight.bold),
-          ),
-          centerTitle: true,
-          backgroundColor: Colors.blueGrey,
+          title: const Text("Shail"),
+          backgroundColor: Colors.amber,
         ),
-        body: Container(
-          height: 250,
-          width: double.maxFinite,
-          decoration: BoxDecoration(
-              color: Colors.red,
-              border: Border.all(width: 5, color: Colors.black)),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              // Text("Hello"),
-              // Text("Hello 2"),
-              Container(
-                decoration: BoxDecoration(
-                    border: Border.all(width: 2, color: Colors.black)),
-                margin: EdgeInsets.all(12),
-                // color: Colors.white,
-                child: Text("123"),
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: [
-                  Text("Hello"),
-                  Text("Hello 2"),
-                ],
-              )
-            ],
+        body: Center(
+          child: Container(
+            child: Text("My First app"),
           ),
         ),
       ),
