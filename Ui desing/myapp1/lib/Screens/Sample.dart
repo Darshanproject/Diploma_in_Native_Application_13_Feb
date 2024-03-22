@@ -74,7 +74,7 @@ class _MyTextfieldsState extends State<MyTextfields> {
               ),
               SizedBox(
                 width: MediaQuery.of(context).size.width - 40,
-                child: ElevatedButton(onPressed: (){
+                child: ElevatedButton(onPressed: (){  
                   if (_fromkey.currentState!.validate()) {
                     Navigator.push(context, MaterialPageRoute(builder: (BuildContext context)=>const Home_Page()));
                   }

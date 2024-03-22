@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myapp1/Screens/Formwithpassword.dart';
 import 'package:myapp1/Screens/Sample.dart';
 
 void main(){
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return  MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MyTextfields(),
+      home: Form_With_Password(),
     );
   }
 }
