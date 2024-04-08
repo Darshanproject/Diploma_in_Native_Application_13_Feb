@@ -24,7 +24,7 @@ class _MyTextfieldsState extends State<MyTextfields> {
                 padding: const EdgeInsets.symmetric(vertical: 20,horizontal: 15),
                 child: TextFormField(
                   validator: (value) {
-                    if (value!.isEmpty && value != null) {
+                    if (value!.isEmpty) {
                       return 'Please enetere your name porperly';
                     }else{
                       return null;
@@ -44,7 +44,7 @@ class _MyTextfieldsState extends State<MyTextfields> {
                 padding: const EdgeInsets.symmetric(vertical: 20,horizontal: 15),
                 child: TextFormField(
                   validator: (value) {
-                    if (value!.isEmpty && value != null) {
+                    if (value!.isEmpty) {
                       return 'Please enetere your name porperly';
                     }else{
                       return null;

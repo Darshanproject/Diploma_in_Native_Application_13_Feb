@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:myapp1/Screens/Formwithpassword.dart';
-import 'package:myapp1/Screens/Listviewbuilder.dart';
-import 'package:myapp1/Screens/Sample.dart';
-import 'package:myapp1/Screens/intimethodes.dart';
+import 'package:myapp1/Screens/GirdView1.dart';
+import 'package:myapp1/Screens/GridView.dart';
+import 'package:myapp1/Screens2/Method1.dart';
+import 'package:myapp1/Screens2/Method2.dart';
+import 'package:myapp1/Screens2/Method3.dart';
+import 'package:myapp1/Screens2/Stck.dart';
 
 void main(){
   runApp(const MyApp());
@@ -15,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return  MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: List_View_Screen1(),
+      home: Stack_Screen(),
     );
   }
 }

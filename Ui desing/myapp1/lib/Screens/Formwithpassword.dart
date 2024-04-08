@@ -1,3 +1,6 @@
+// ignore_for_file: camel_case_types
+
+// ignore: unnecessary_import
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -15,7 +18,7 @@ class _Form_With_PasswordState extends State<Form_With_Password> {
   Widget build(BuildContext context) {
     return  Scaffold(
       body: Container(
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           gradient: LinearGradient(colors: [Colors.amber,Colors.blue,Colors.grey,Colors.green,Colors.pink],
           begin:Alignment.bottomCenter,
           end: Alignment.topCenter 
@@ -25,7 +28,7 @@ class _Form_With_PasswordState extends State<Form_With_Password> {
           decoration: BoxDecoration(
             color: const Color.fromARGB(48, 0, 0, 0),
             borderRadius: BorderRadius.circular(24),
-            boxShadow: [
+            boxShadow: const [
               BoxShadow(
                 blurRadius: 25,
                 blurStyle: BlurStyle.outer,
@@ -55,7 +58,7 @@ class _Form_With_PasswordState extends State<Form_With_Password> {
                   },
                   decoration: InputDecoration(
                     border: OutlineInputBorder(
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Colors.black,
                         width: 5
                       ),
@@ -67,7 +70,7 @@ class _Form_With_PasswordState extends State<Form_With_Password> {
                   ),
                   
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 25,
                 ),
                 TextFormField(
@@ -80,7 +83,7 @@ class _Form_With_PasswordState extends State<Form_With_Password> {
                   },
                   decoration: InputDecoration(
                     border: OutlineInputBorder(
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Colors.black,
                         width: 5
                       ),
@@ -92,7 +95,7 @@ class _Form_With_PasswordState extends State<Form_With_Password> {
                   ),
                   
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 25,
                 ),
                Row(
@@ -102,19 +105,19 @@ class _Form_With_PasswordState extends State<Form_With_Password> {
                     _selcted = newvalue!;
                   });
                 }),
-                Text("Terms and condtions")
+                const Text("Terms and condtions")
                 ],
                ),
-                Spacer(),
+                const Spacer(),
                 SizedBox(
                   width: MediaQuery.of(context).size.width - 240,
                   child: ElevatedButton(onPressed: _selcted == true?(){
                     if (_fromkey.currentState!.validate()) {
-                      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content:Text("Login Successfully"),backgroundColor: Colors.green,));
+                      ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content:Text("Login Successfully"),backgroundColor: Colors.green,));
                     }
                   }: (){
-                    ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("Please Selecte terms and condtion"),backgroundColor: Colors.red,));
-                  }, child: Text("Login")),
+                    ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text("Please Selecte terms and condtion"),backgroundColor: Colors.red,));
+                  }, child: const Text("Login")),
                 )
               ],
                        ),
