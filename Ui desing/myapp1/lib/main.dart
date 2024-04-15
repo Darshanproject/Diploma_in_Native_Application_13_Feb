@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:myapp1/Advance/NewTab.dart';
+import 'package:myapp1/Advance/Splash_Screen.dart';
 import 'package:myapp1/Screens/GirdView1.dart';
 import 'package:myapp1/Screens/GridView.dart';
 import 'package:myapp1/Screens2/Method1.dart';
@@ -17,7 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return  MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Stack_Screen(),
+      home: Splash_Screen(),
     );
   }
 }
