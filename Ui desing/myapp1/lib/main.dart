@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myapp1/Advance/Bottom.dart';
 import 'package:myapp1/Advance/NewTab.dart';
 import 'package:myapp1/Advance/Splash_Screen.dart';
 import 'package:myapp1/Screens/GirdView1.dart';
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return  MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Splash_Screen(),
+      home: MyBottom_Bar(),
     );
   }
 }
